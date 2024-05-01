@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+/*Barra de navegación*/
+
+.intro{
+    background: #19283B;
+    color: #FFf;
+    height: 60px;
+    padding: 0 125px;
+    font-size: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.img-logo{
+    width: 40px;
+}
+
+/*header*/
+
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    padding: 0 55px;
+    gap: 100px;
+}
+
+.principal .introduccion {
+    margin-left: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: right; 
+    gap: 20px; 
+}
+
+.introduccion h1{
+    font-size: 60px;
+}
+
+.introduccion p{
+    margin-bottom: 15px;
+}
+
+.introduccion .visualizar{
+    width: 150px;
+    height: 40px;
+}
+
+
+/*Secciones cursos a visualizar*/
+
+.cursos{
+    display: flex;
+    margin: 0 150px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.curso{
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    height: 300px;
+    background: #19283B;
+    border-radius: 6px;
+}
+
+
+/*Imagenes*/
+.curso img{
+    width: 190px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+
+.description{
+    padding: 10px;
+}
+
+.curso .description h1{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.curso .description h2{
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.curso .description p{
+    font-size: 12px;
+}
+
+.btns{
+    margin-top: auto;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 6px 6px;
+}
+
+.btns button{
+    font-size: 10px;
+}
+
+.btns .btn-precio{
+    width: 60px;
+}
+
+.btns .btn-date{
+    width: 80px;
+}
+
+
+/*Autores*/
+.somos{
+    display: flex;
+    flex-direction: column;
+    background: #19283B;
+    height: 280px;
+    margin: 0 150px 30px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.autores{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-autores img{
+    width: 50%;
+}
+
+.info-autores span{
+    font-size: 13px;
+    font-style: oblique;
+}
+
+.autores .info-autores{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.description-autores{
+    margin-top: auto;
+    padding: 0 50px;
+    text-align: justify;
+}
+
+/*Footer*/
+
+footer{
+    background: #19283B;
+    color: #FFf;
+    padding: 20px 55px;
+}
+
+footer img{
+    width: 350px;
+    margin-top: 30px; 
+    margin-bottom: 40px;
+}
+
+footer .direccion{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/*Parte Social*/
+.social{
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .links a{
+    margin: 0 20px;
+    padding: 5px;
+  }
+  
+  .links a i{
+    font-size: 1.5rem;
+    color: #FFF;
+  }
