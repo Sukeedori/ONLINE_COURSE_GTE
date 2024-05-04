@@ -2,29 +2,38 @@
 <html lang="es">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aprende Mejor, página web enfocada a capacitar temáticas innovadoras">
-    <link rel="icon" type="image/png" href="images/icon_page.png">
-    <title>Aprende Mejor</title>
+    <meta name="description" content="EduLearn, página web enfocada a capacitar temáticas innovadoras">
+    <link rel="icon" type="image/png" href="images/logoipsum-226.svg">
+    <title>EduLearn</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <!--Font--> 
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
   <body>
 
   <div class="content">
-    <header class="nav">
-      <div class="intro">
-        <img class="img-logo" src="images/unl.png" alt="logo_unl">
-        <h1>!Aprende Mejor!</h1>
-        <h1>¿Quienes somos?</h1>
+
+    <nav class="nav-ct">
+      <div class="nav-unl">
+        <img src="images/unl.png" alt="logo-unl">
       </div>
-    </header>
 
+      <div class="nav-name">
+        <img src="images/logoipsum-226.svg" alt="logo_EduLearn">
+        <a href="#principal">
+          <h1>EduLearn</h1>
+        </a>
+      </div>
 
-    <article class="principal">
-      <div class="introduccion">
+      <ul class="nav-menu">
+        <li>
+          <a>¿Quienes somos?</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header-main" id="principal">
+      <div class="info-init">
         <h1>Bienvenido</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus odit minima dolorem ipsa beatae mollitia.</p>
         <button class="visualizar">Ver Cursos <i class="fas fa-angle-double-right"></i></button>
@@ -33,7 +42,7 @@
       <div class="imagen">
         <img src="images/imagne.gif" alt="pc" loading="lazy">
       </div>
-    </article>
+    </header>
 
     <article class="cursos">
       <section class="curso">
@@ -102,7 +111,7 @@
       </section>
     </article>
 
-    <section class="somos">
+    <section class="somos" id="somos">
       <article class="autores">
         <div class="info-autores">
           <img src="images/Autores/icon_author.png" loading="lazy">
@@ -135,23 +144,19 @@
     <footer>
       <section class="direccion">
         <img src="images/logo2.png" alt="logo-unl" loading="lazy">
-          <p>2024 ©AprendeMejor</p>
+          <p>2024 ©EduLearn</p>
           <p>Dirección: Olmedo y Quito - Teléfono: (07) 2550388 2574815</p>
           <p>Teléfono: 0998 265 853</p>
       </section>
 
       <section class="social">
         <div class="links">
-              <a href="https://es-la.facebook.com/" target="_blank">
-                <i class="fab fa-facebook-f"> </i>
+              <a href="https://github.com/Sukeedori" target="_blank">
+                <i class="fab fa-github"> </i>
               </a>
         
-              <a href="https://twitter.com/login?lang=es" target="_blank">
+              <a href="https://twitter.com/sukeedori" target="_blank">
                 <i class="fab fa-twitter"> </i>
-              </a>
-        
-              <a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                <i class="fab fa-linkedin"> </i>
               </a>
         </div>
         </section>
