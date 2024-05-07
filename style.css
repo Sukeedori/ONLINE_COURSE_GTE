@@ -50,6 +50,10 @@ body{
     display: inline-flex;
 }
 
+.nav-menu:hover{
+    opacity: .8;
+}
+
 a{
     color: #FFF;
     font-weight: bold;
@@ -86,6 +90,7 @@ ul li a:hover::after {
     height: 700px;
     padding: 0 55px;
     gap: 100px;
+    overflow: hidden;
 }
 
 .info-init {
@@ -103,11 +108,22 @@ ul li a:hover::after {
 
 .info-init p{
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
-.info-init .visualizar{
-    width: 150px;
+.info-init .btn-init{
+    color: #FFF;
+    background: #6366f1;
+    width: 130px;
     height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #0C4093;
+}
+
+.btn-init:hover{
+    opacity: .8;
 }
 
 .imagen img{
@@ -129,17 +145,18 @@ ul li a:hover::after {
     flex-direction: column;
     width: 190px;
     height: 300px;
-    background: #19283B;
+    background:#111827;
     border-radius: 6px;
+    border:1.5px solid #1f2937;
+    overflow: hidden;
 }
 
 
 /*Imagenes*/
 .curso img{
-    width: 190px;
-    height: 100px;
+    max-width: 100%;
+    height: 100px;  /*ARREGLAR ESTO DE LAS IMAGENES EL ALTO*/
     object-fit: cover;
-    border-radius: 6px 6px 0 0;
 }
 
 .description{
@@ -147,20 +164,22 @@ ul li a:hover::after {
 }
 
 .curso .description h1{
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
 .curso .description h2{
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 8px;
 }
 
 .curso .description p{
     font-size: 16px;
+    color: #9ca3af;
 }
 
 .btns{
+    background:#111827;
     margin-top: auto;
     padding: 10px;
     gap: 10px;
@@ -172,14 +191,29 @@ ul li a:hover::after {
 
 .btns button{
     font-size: 10px;
+    pointer-events: none;
 }
 
 .btns .btn-precio{
-    width: 60px;
+    color: #FFF;
+    background: #4f46e5;
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #0C4093;
 }
 
 .btns .btn-date{
-    width: 80px;
+    color: #FFF;
+    background: #6b7280;
+    width: 110px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #ffffff0d;
 }
 
 
@@ -188,7 +222,7 @@ ul li a:hover::after {
     display: flex;
     flex-direction: column;
     background: #19283B;
-    height: 280px;
+    height: 250px;
     margin: 90px 150px 90px;
     padding: 15px;
     border-radius: 6px;
@@ -205,7 +239,7 @@ ul li a:hover::after {
 }
 
 .info-autores span{
-    font-size: 13px;
+    font-size: 14px;
     font-style: oblique;
 }
 
@@ -216,8 +250,10 @@ ul li a:hover::after {
 }
 
 .description-autores{
+    color: #9ca3af;
     margin-top: auto;
     padding: 0 50px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -225,7 +261,7 @@ ul li a:hover::after {
 
 footer{
     background: #19283B;
-    color: #FFf;
+    color: #9ca3af;
     padding: 20px 55px;
 }
 
