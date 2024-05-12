@@ -7,11 +7,11 @@
     <title>EduLearn</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
 
-  <div class="content">
+  <div class="container">
 
     <nav class="nav-ct">
       <div class="nav-unl">
@@ -27,7 +27,7 @@
 
       <ul class="nav-menu">
         <li>
-          <a>¿Quienes somos?</a>
+          <a href="#somos">¿Quienes somos?</a>
         </li>
       </ul>
     </nav>
@@ -101,7 +101,7 @@
         <img src="images/Cursos/small basic.png" alt="Sbasic" loading="lazy">
         <div class="description">
           <h1>Curso de Small Basic</h1>
-          <h2><em>Introducción para complender los fundamentos básicos de la programación</em></h2>
+          <h2><em>Introducción a Small Basic</em></h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
         <footer class="btns">
@@ -141,15 +141,25 @@
     </section>
 
 
-    <footer>
-      <section class="direccion">
-        <img src="images/logo2.png" alt="logo-unl" loading="lazy">
-          <p>2024 ©EduLearn</p>
-          <p>Dirección: Olmedo y Quito - Teléfono: (07) 2550388 2574815</p>
-          <p>Teléfono: 0998 265 853</p>
+    <footer class="footer-end">
+      <section class="footer-info">
+        <div class="img-unl">
+          <img src="images/logo2.png" alt="logo-unl" loading="lazy">
+        </div>
+
+        <section class="footer-address">
+          <div class="address">
+            <p>2024 ©EduLearn</p>
+            <p>Dirección: Olmedo y Quito - Teléfono: (07) 2550388 2574815</p>
+            <p>Teléfono: 0998 265 853</p>
+          </div>
+          <div class="img-pcei">
+            <img src="images/image.png" alt="logo-PCEI" loading="lazy">
+          </div>
+        </section>
       </section>
 
-      <section class="social">
+      <section class="footer-social">
         <div class="links">
               <a href="https://github.com/Sukeedori" target="_blank">
                 <i class="fab fa-github"> </i>
@@ -161,6 +171,7 @@
         </div>
         </section>
   </footer>
+
   </div>
    
   </body>
