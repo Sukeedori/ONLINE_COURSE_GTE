@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    background: #000;
+    color: #FFF;
+}
+
+/*Barra de navegación*/
+.nav-ct {
+    background-color: #19283B;
+    width: 100%;
+    padding: 20px 125px;
+    color: #FFf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.icon_principal a i{
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.nav-name img{
+    width: 50px;
+}
+
+.nav-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+.nav-name h1{
+    font-size: 30px;
+}
+
+/*header*/
+.header-init{
+    background-color:#171717;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 40px 140px;
+    overflow: hidden;
+}
+
+.h_info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+}
+
+.h_info h1{
+    color: #bae6fd;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.h_info p{
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+.date_language{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.date_language span{
+    color: #cbd5e1;
+    margin-left: 5px;
+}
+
+.act-l i{
+    color: #bae6fd;
+}
+
+.h_img img{
+    width: 250px;
+}
+
+/*Section objects*/
+.objects{
+    background-color:#0a0a0a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    text-align: left;
+    padding: 40px 40px;
+    margin: 10px 140px;
+    overflow: hidden;
+}
+
+.objects h1{
+    color: #bae6fd;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.objects li{
+    color: #cbd5e1;
+    font-weight: 360;
+}
+
+p, li{
+    font-size: 17.5px;
+    margin-bottom: 8px;
+    line-height: 19px;
+}
+
+/*Section description and request */
+.description{
+    background-color:#0a0a0a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    text-align: left;
+    padding: 40px 40px;
+    margin: 10px 140px;
+    overflow: hidden;
+}
+
+.description h1,
+.learn h1{
+    color: #bae6fd;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.part2 h1{
+    margin-top: 40px;
+}
+
+.part1 p,
+.part2 li{
+    color: #cbd5e1;
+    font-weight: 360;
+}
+
+/*Section Learn*/
+.learn {
+    background-color: #0a0a0a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    text-align: left;
+    padding: 40px 40px;
+    margin: 10px 140px;
+    overflow: hidden;
+}
+
+.learn ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.learn li {
+    color: #cbd5e1;
+    margin-right: 30px; 
+    font-weight: 360;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+}
+
+/*button*/
+.btn-continue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-continue button{
+    color: #cbd5e1;
+    background-color: #4f46e5;
+    width: 130px;
+    height: 40px;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 1px solid #4f46e5;
+    cursor: pointer;
+}
+
+.btn-continue button:hover {
+    opacity: 0.8; 
+}
+
+@media (max-width:1115px){
+    .nav-ct {
+        padding: 20px 40px;
+      }
+
+    .objects, 
+    .description,
+    .learn{
+        margin-left: 30px;
+        margin-right: 30px; 
+    }
+
+    .header-init{
+        padding: 40px 50px;
+    }
+}
+
+@media (max-width:920px){
+    .date_language{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .icon_principal a i{
+        font-size: 1.25rem;
+    }
+    
+    .nav-name img{
+        width: 40px;
+    }
+    
+    .nav-name h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width:540px){
+    .nav-ct {
+        padding: 15px 20px;
+    }
+
+    .header-init{
+        flex-direction: column;
+    }
+
+    .nav-name img{
+        width: 35px;
+    }
+    
+    .nav-name h1{
+        font-size: 25px;
+    }
+
+    .learn ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .learn li{
+        width: 100%;
+    }
+}

@@ -1,42 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: #000;
     color: #FFF;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
-/*Barra de navegación*/
+/* Barra de navegación */
 
 .nav-ct {
     background-color: #19283B;
     width: 100%;
     padding: 22px 125px;
-    color: #FFf;
+    color: #FFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 1000;
-  }
-  
-.nav-unl img{
+}
+
+.nav-unl img {
     width: 50px;
 }
 
-.nav-name img{
+.nav-name img {
     width: 90px;
 }
 
@@ -44,40 +49,37 @@ body{
     display: flex;
     align-items: center;
     gap: 5px;
-  }
+}
 
-.nav-name h1{
+.nav-name h1 {
     font-size: 50px;
 }
 
-.nav-menu{
+.nav-menu {
     list-style: none;
     display: inline-flex;
     font-size: 20px;
 }
 
 .nav-name a, 
-.nav-menu a{
+.nav-menu a {
     color: #FFF;
     font-weight: bold;
     text-decoration: none;
 }
 
-
-
-/*hover nav y btn inicial*/
-
+/* hover nav y btn inicial */
 .nav-menu:hover, 
-.btn-init:hover{
+.btn-init:hover {
     opacity: .8;
 }
 
-/*hover pequeña transición*/
+/* hover pequeña transición */
 .nav-menu li a {
     border-bottom: 1.8px solid transparent;
     position: relative;
-  }
-  
+}
+
 ul li a::after {
     content: '';
     position: absolute;
@@ -86,16 +88,15 @@ ul li a::after {
     width: 0px;
     height: 2px;
     background-color: #FFF;
-    transition: width 0.2s; 
-  }
-  
+    transition: width 0.2s;
+}
+
 ul li a:hover::after {
     width: 100%;
-  }  
+}
 
-/*header*/
-
-.header-main{
+/* header */
+.header-main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,22 +111,22 @@ ul li a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 20px; 
+    gap: 20px;
 }
 
-.info-init h1{
+.info-init h1 {
     font-size: 80px;
     text-transform: uppercase;
 }
 
-.info-init p{
+.info-init p {
     margin-bottom: 15px;
     font-size: 18px;
 }
 
-.btn-init{
+.btn-init {
     color: #FFF;
-    background: #6366f1;
+    background-color: #6366f1;
     width: 130px;
     height: 40px;
     font-size: 16px;
@@ -134,60 +135,61 @@ ul li a:hover::after {
     border: 1px solid #6366f1;
 }
 
-.imagen img{
+.imagen img {
     width: 450px;
+
 }
 
-/*Secciones cursos a visualizar*/
-
-.cursos{
+/* Secciones cursos a visualizar */
+.cursos {
     display: flex;
     margin: 0 150px 30px;
     align-items: center;
     justify-content: space-between;
 }
 
-.curso{
+.curso {
     display: flex;
     flex-direction: column;
     width: 200px;
     height: 300px;
     text-align: left;
-    background-color:#030712;
+    background-color: #030712;
     border-radius: 6px;
-    border:1.5px solid #111827;
+    border: 1.5px solid #111827;
     overflow: hidden;
+    cursor: pointer;
 }
 
-/*Imagenes*/
-.curso img{
+/* Imagenes */
+.curso img {
     max-height: 100px;
     background-size: 100% 150px;
     background-repeat: no-repeat;
     background-position-y: 0;
 }
 
-.description{
+.description {
     padding: 10px;
     overflow: hidden;
 }
 
-.description h1{
+.description h1 {
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.description h2{
+.description h2 {
     font-size: 12px;
     margin-bottom: 8px;
 }
 
-.description p{
+.description p {
     font-size: 16px;
     color: #6b7280;
 }
 
-.btns{
+.btns {
     margin-top: auto;
     padding: 10px;
     gap: 10px;
@@ -197,12 +199,12 @@ ul li a:hover::after {
     border-radius: 0 0 6px 6px;
 }
 
-.btns button{
+.btns button {
     font-size: 10px;
     pointer-events: none;
 }
 
-.btns .btn-precio{
+.btns .btn-precio {
     color: #FFF;
     background-color: #4f46e5;
     width: 70px;
@@ -214,7 +216,7 @@ ul li a:hover::after {
     border: 1px solid #4f46e5;
 }
 
-.btns .btn-date{
+.btns .btn-date {
     color: #FFF;
     background-color: #6b7280;
     width: 110px;
@@ -226,8 +228,8 @@ ul li a:hover::after {
     border: 1px solid #ffffff0d;
 }
 
-/*Autores*/
-.somos{
+/* Autores */
+.somos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,28 +240,28 @@ ul li a:hover::after {
     overflow: hidden;
 }
 
-.autores{
+.autores {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.info-autores img{
-    width: 50%;
+.info-autores img {
+    width: 30%;
 }
 
-.info-autores span{
+.info-autores span {
     font-size: 14px;
     font-style: oblique;
 }
 
-.autores .info-autores{
+.autores .info-autores {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.description-autores{
+.description-autores {
     color: #9ca3af;
     margin-top: 40px;
     padding: 0 50px;
@@ -267,72 +269,81 @@ ul li a:hover::after {
     text-align: center;
 }
 
-/*Footer*/
-
-.footer-end{
+/* Footer */
+.footer-end {
     background-color: #000;
     color: #9ca3af;
     margin: 140px 140px 0;
 }
 
-.img-unl img{
+.img-unl img {
     width: 350px;
     margin-bottom: 50px;
 }
 
-.footer-address{
+.footer-address {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 6px;
 }
 
-.address{
+.address {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 7px;
 }
 
-.img-pcei img{
+.license small{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.img-pcei {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.img-pcei img {
     width: 210px;
 }
 
-/*Parte Social*/
-.footer-social{
+/* Parte Social */
+.footer-social {
     text-align: center;
     font-size: 15px;
-  }
-  
-  .links{
+}
+
+.links {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 45px 0 60px;
-  }
-  
-  .links a{
+    margin: 45px 0;
+}
+
+.links a {
     margin: 0 20px;
     padding: 5px;
-  }
-  
-  .links a i{
-    font-size: 1.5rem;
+}
+
+.links a i {
+    font-size: 2rem;
     color: #FFF;
-  }
+}
 
-/*Responsive*/
+/* Responsive */
+@media screen and (max-width: 1115px) {
 
-@media (max-width:1115px){
-
-    .curso img{
+    .curso img {
         min-height: 100px;
     }
 
-    .info-init h1{
+    .info-init h1 {
         font-size: 70px;
     }
-    
-    .imagen img{
+
+    .imagen img {
         width: 350px;
     }
 
@@ -345,17 +356,18 @@ ul li a:hover::after {
     .curso {
         width: 190px;
     }
-    
-    .header-main, 
+
+    .header-main,
     .cursos,
     .somos,
-    .footer-end{
+    .footer-end {
         margin-left: 40px;
-        margin-right: 40px; 
+        margin-right: 40px;
     }
+}
 
-@media (max-width:1086px){
-    .imagen img{
+@media screen and (max-width: 1086px) {
+    .imagen img {
         width: 300px;
     }
 
@@ -364,87 +376,86 @@ ul li a:hover::after {
     }
 }
 
-@media (max-width:915px){
-    .nav-ct{
+@media screen and (max-width: 915px) {
+    .nav-ct {
         flex-direction: column;
         gap: 10px;
     }
 
-    .nav-ct .nav-unl{
+    .nav-ct .nav-unl {
         display: none;
     }
 
-    .header-main{
+    .header-main {
         flex-direction: column-reverse;
     }
 
-    .imagen img{
+    .imagen img {
         width: 310px;
         padding: 0;
         margin-top: 35px;
         margin-bottom: 5px;
     }
 
-    .header-main ,.info-init{
+    .header-main,
+    .info-init {
         gap: 5px;
     }
 
-    .info-init h1{
+    .info-init h1 {
         font-size: 40px;
     }
-    
-    .info-init p{
+
+    .info-init p {
         font-size: 16px;
     }
 
-    .btn-init{
+    .btn-init {
         width: 120px;
         height: 35px;
         font-size: 15px;
     }
-    
 }
 
-@media (max-width:770px){
-    .nav-name h1{
+@media screen and (max-width: 770px) {
+    .nav-name h1 {
         font-size: 40px;
     }
 
-    .nav-menu a{
+    .nav-menu a {
         font-size: 13px;
     }
-    .somos{
+
+    .somos {
         margin: 90px auto;
         width: 350px;
     }
 
-    .autores{
+    .autores {
         flex-direction: column;
         gap: 10px;
     }
 
-    .description-autores{
+    .description-autores {
         padding: 0 5px;
     }
 
-    .info-autores img{
+    .info-autores img {
         width: 50px;
         margin-bottom: 10px;
     }
 
-    .img-unl img{
+    .img-unl img {
         width: 275px;
     }
 }
 
-@media (max-width:770px){
-    .footer-address{
+@media screen and (max-width: 770px) {
+    .footer-address {
         flex-direction: column;
     }
 
-    .img-pcei img{
+    .img-pcei img {
         margin-top: 10px;
     }
-}
-
 }
