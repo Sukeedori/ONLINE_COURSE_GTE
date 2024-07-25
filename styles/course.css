@@ -21,6 +21,11 @@ ol, ul{
     padding-left: 30px; 
 }
 
+h1, h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 form{
     margin-top: 20px;
 }
@@ -52,6 +57,7 @@ p, li{
     text-align: right;
     margin-top: 15px;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .video, 
@@ -83,10 +89,14 @@ iframe{
 }
 
 .img_cp img{
-    width: 100%;
+    width: 50%;
     height: auto;
     max-width: 800px;
     border-radius: 6px;
+}
+
+.img_cp small{
+    margin-top: 5px;
 }
 /*Barra de navegación*/
 .nav-ct {

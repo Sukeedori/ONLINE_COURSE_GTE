@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Juego del Ahorcado-REA desarrollado con HTML, CSS y JavaScript.">
+    <link rel="icon" type="image/png" href="/resources/logos/logo_edulearn.svg">
+    <title>EduLearn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/word-list.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="images/victory.png" alt="png">
+            <h4>Juego Finalizado</h4>
+            <p>La palabra correcta es: <strong>rainbow</strong></p>
+            <div class="btns">
+                <button class="play-again">Jugar de nuevo <i class="fas fa-angle-double-right"></i></button>
+                <button class="siguiente">siguiente actividad <i class="fas fa-angle-double-right"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="game-box">
+            <ul class="word-display"></ul>
+
+            <h4 class="hint-text">
+                Concepto:
+                <strong>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, omnis.
+                </strong>
+        
+            </h4>
+            <h4 class="guesses-text">
+                Selecciones Incorrectas:
+                <strong>
+                    0 / 6
+                </strong>
+            </h4>
+
+            <div class="keyboard"> </div>
+            <!--<button class="siguiente">siguiente <i class="fas fa-angle-double-right"></i></button>-->
+        </div>
+
+        <div class="hangman-box">
+            <img src="images/hangman-0.svg" alt="hangman-img">
+            <h1>juego del ahorcado</h1>
+        </div>
+    </div>
+</body>
+</html>
